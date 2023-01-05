@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<ImageView
+    android:id="@+id/menu"
+    android:layout_width="26dp"
+    android:layout_height="26dp"
+    android:src="@drawable/menus"
+    android:layout_marginTop="22dp"
+    android:layout_marginLeft="20dp"/>
+
+    <ImageView
+        android:id="@+id/bell"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:src="@drawable/notification"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="22dp"
+        android:layout_marginRight="20dp"/>
+
+    <TextView
+        android:id="@+id/Welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/menu"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@+id/menu"
+        android:hint="Welcome"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/DDD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dice Dreams Daily"
+        android:textStyle="bold"
+        android:textSize="21sp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/Welcome"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="7dp"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/LevelCard"
+        android:layout_width="170dp"
+        android:layout_height="238dp"
+        android:layout_below="@+id/DDD"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="18dp"
+        app:cardBackgroundColor="#D4EFEA"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/pyramid"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:src="@drawable/pyramid"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="62dp"/>
+
+            <TextView
+                android:id="@+id/TopGames"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pyramid"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="17dp"
+                android:text="Top Games"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Rolls"
+        android:layout_width="175dp"
+        android:layout_height="110dp"
+        android:layout_below="@id/DDD"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="18dp"
+        android:layout_toRightOf="@+id/LevelCard"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="#ECDAD4">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/Dollar"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/dollar" />
+
+            <TextView
+                android:id="@+id/RollsReward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Dollar"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="16dp"
+                android:text="Rolls Rewards"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/RadCode"
+        android:layout_width="175dp"
+        android:layout_height="110dp"
+        android:layout_below="@id/Rolls"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="18dp"
+        android:layout_toRightOf="@+id/LevelCard"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="#CEC9DA">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/rightarrow"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/rightarrow" />
+
+            <TextView
+                android:id="@+id/RadeemCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rightarrow"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="16dp"
+                android:text="Radeem Code"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/HG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Welcome"
+        android:layout_marginTop="318dp"
+        android:layout_toRightOf="@id/menu"
+        android:text="Helping Guides"
+        android:textStyle="bold"
+        android:textColor="@color/black" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Faq"
+        android:layout_width="340dp"
+        android:layout_height="86dp"
+        android:layout_below="@id/HG"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="15dp"
+        app:cardBackgroundColor="#F1E8E2"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:id="@+id/Que"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/Mark"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="18dp"
+                android:src="@drawable/questionmark" />
+
+            <TextView
+                android:id="@+id/tex1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/Mark"
+                android:text="FAQs"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/DDG"
+        android:layout_width="340dp"
+        android:layout_height="86dp"
+        android:layout_below="@id/Faq"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="15dp"
+        app:cardBackgroundColor="#F1E8E2"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:id="@+id/DDGuide"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/Book"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="18dp"
+                android:src="@drawable/openbook" />
+
+            <TextView
+                android:id="@+id/tex2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/Book"
+                android:text="DD Guide"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Tip"
+        android:layout_width="340dp"
+        android:layout_height="86dp"
+        android:layout_below="@id/DDG"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="15dp"
+        app:cardBackgroundColor="#F1E8E2"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:id="@+id/Tips3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/Bulb"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="18dp"
+                android:src="@drawable/lightbulb" />
+
+            <TextView
+                android:id="@+id/tex3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/Bulb"
+                android:text="Tips"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</RelativeLayout>
